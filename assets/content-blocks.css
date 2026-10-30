@@ -1,0 +1,89 @@
+/* H View content blocks — inserted from the Control Center editor.
+   Loaded on the website (app.php) and inside the editor. */
+.hv-callout, .hv-takeaways, .hv-note, .hv-toc, .hv-faq { margin: 1.4em 0; border-radius: 16px; font-family: 'Mukta', system-ui, sans-serif; font-size: 16.5px; line-height: 1.6; }
+.hv-callout { padding: 16px 20px; border-left: 4px solid #1E4CFF; background: #EEF2FF; color: #18213D; }
+.hv-callout strong:first-child { display: block; margin-bottom: 4px; color: #1A33A8; }
+.hv-takeaways { padding: 18px 22px; background: linear-gradient(115deg, #FFF0F7, #F6F1FD 50%, #EDF1FF); border: 1px solid #ECDFF0; }
+.hv-takeaways h3 { margin: 0 0 8px !important; font: 600 19px/1.3 'Newsreader', Georgia, serif; color: #0A1735; }
+.hv-takeaways ul { margin: 0; padding-left: 20px; }
+.hv-takeaways li + li { margin-top: 6px; }
+.hv-note { padding: 12px 18px; background: #FFF6E5; border: 1px solid #FCE3B5; color: #7A2E0E; font-size: 15px; }
+.hv-cta { margin: 1.6em 0; text-align: center; }
+.hv-cta a { display: inline-block; padding: 13px 26px; border-radius: 999px; background: linear-gradient(105deg, #1E4CFF, #6553D9 55%, #D81B76); color: #fff !important; font: 700 15.5px/1 'Mukta', system-ui, sans-serif; text-decoration: none !important; box-shadow: 0 10px 24px -10px rgba(101, 83, 217, .6); }
+.hv-faq { border: 1px solid #E3E7F0; background: #fff; }
+.hv-faq summary { padding: 14px 18px; cursor: pointer; font: 600 17.5px/1.35 'Newsreader', Georgia, serif; color: #0A1735; }
+.hv-faq summary::marker { color: #D81B76; }
+.hv-faq > div, .hv-faq > p { padding: 0 18px 16px; margin: 0; color: #394D69; }
+.hv-toc { padding: 16px 20px; border: 1px solid #E3E7F0; background: #FAFBFD; }
+.hv-toc b { display: block; margin-bottom: 6px; font: 600 15px 'Mukta', sans-serif; color: #0A1735; }
+.hv-toc ol { margin: 0; padding-left: 20px; }
+.hv-toc a { color: #1E4CFF; text-decoration: none; }
+.hv-toc a:hover { text-decoration: underline; }
+.hv-cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin: 1.4em 0; }
+.hv-pull { margin: 1.6em 0; padding: 6px 0 6px 22px; border-left: 4px solid #D81B76; font: italic 500 clamp(21px, 2.4vw, 26px)/1.4 'Newsreader', Georgia, serif; color: #0A1735; }
+.hv-pull cite { display: block; margin-top: 8px; font: 600 14px 'Mukta', sans-serif; font-style: normal; color: #7E87A1; }
+@media (max-width: 640px) { .hv-cols { grid-template-columns: 1fr; } }
+/* H View site fix v1: page FAQs – H3 question, paragraph answer, navy and gold like article FAQs */
+.hv-qa{position:relative;margin:0;padding:20px 0 20px 20px;border-bottom:1px solid #e6e9f2;background:none;text-align:left}
+.hv-qa:first-of-type{padding-top:12px}
+.hv-qa .hv-qa-q{position:relative;margin:0 0 8px!important;padding:0!important;border:0!important;background:none!important;font-family:'Newsreader',Georgia,'Times New Roman',serif!important;font-weight:600!important;font-size:clamp(18px,1.4vw,21px)!important;line-height:1.35!important;letter-spacing:-.005em;color:#0c1a3d!important;text-transform:none!important}
+.hv-qa .hv-qa-q::before{content:"";position:absolute;left:-20px;top:.18em;width:4px;height:1.05em;border-radius:2px;background:#e2b13c}
+.hv-qa .hv-qa-a{margin:0!important;padding:0!important;font-size:16px;line-height:1.7;color:#3a4160}
+.hv-qa .hv-qa-a a{color:#1a33a8;text-decoration:underline;text-underline-offset:3px}
+/* hv-viz-1: visual blocks for articles (flow, funnel, compare, stats, timeline, checklist, hub, service box) */
+.hv-viz{margin:1.8em 0;padding:22px 20px;border:1px solid #dfe7f2;border-radius:18px;background:linear-gradient(180deg,#f7faff,#fff)}
+.hv-viz-title{margin:0 0 14px!important;font:700 13px/1.3 Inter,system-ui,sans-serif!important;letter-spacing:.08em;text-transform:uppercase;color:#2468c4}
+.hv-viz-cap{margin:12px 0 0!important;font-size:14px!important;color:#586b83!important;text-align:center}
+.hv-flow{display:flex;flex-wrap:wrap;align-items:stretch;gap:0;counter-reset:hvf}
+.hv-flow>div{position:relative;flex:1 1 0;min-width:120px;margin:0 22px 0 0;padding:14px 12px;border-radius:14px;background:#fff;border:1px solid #dce5f0;box-shadow:0 8px 20px -14px rgba(25,52,91,.35);text-align:center;counter-increment:hvf}
+.hv-flow>div:last-child{margin-right:0}
+.hv-flow>div::before{content:counter(hvf);display:grid;place-items:center;width:28px;height:28px;margin:0 auto 8px;border-radius:50%;background:linear-gradient(108deg,#2468c4,#625cba 58%,#c54882);color:#fff;font:700 13px/1 Inter,sans-serif}
+.hv-flow>div:not(:last-child)::after{content:"";position:absolute;top:50%;right:-17px;width:12px;height:12px;border-top:3px solid #c54882;border-right:3px solid #c54882;transform:translateY(-50%) rotate(45deg)}
+.hv-flow b{display:block;color:#1b2b43;font-size:15.5px;line-height:1.3}
+.hv-flow small{display:block;margin-top:5px;color:#586b83;font-size:13px;line-height:1.45}
+.hv-funnel{display:grid;gap:8px;justify-items:center}
+.hv-funnel>div{width:100%;padding:12px 16px;border-radius:12px;color:#fff;text-align:center;font-weight:600;line-height:1.35}
+.hv-funnel>div small{display:block;font-weight:400;opacity:.92;font-size:13px}
+.hv-funnel>div:nth-child(1){width:100%;background:#2468c4}.hv-funnel>div:nth-child(2){width:86%;background:#4561c0}.hv-funnel>div:nth-child(3){width:72%;background:#625cba}.hv-funnel>div:nth-child(4){width:58%;background:#8f53a3}.hv-funnel>div:nth-child(5){width:46%;background:#c54882}
+.hv-compare{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.hv-compare>div{padding:16px 18px;border-radius:14px;background:#fff;border:1px solid #dce5f0;border-top:5px solid #2468c4}
+.hv-compare>div:nth-child(2){border-top-color:#c54882}.hv-compare>div:nth-child(3){border-top-color:#625cba}
+.hv-compare h4{margin:0 0 8px!important;font-size:17px!important;color:#1b2b43}
+.hv-compare ul{margin:0!important;padding-left:18px!important}.hv-compare li{margin:4px 0!important;font-size:15px}
+.hv-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+.hv-stats>div{padding:16px;border-radius:14px;background:#fff;border:1px solid #dce5f0;text-align:center}
+.hv-stats b{display:block;font:700 28px/1.1 "Playfair Display",Georgia,serif;background:linear-gradient(108deg,#2468c4,#625cba 58%,#c54882);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hv-stats span{display:block;margin-top:6px;color:#586b83;font-size:13.5px;line-height:1.4}
+.hv-timeline{position:relative;margin:0;padding:0 0 0 26px}
+.hv-timeline::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:3px;border-radius:3px;background:linear-gradient(#2468c4,#c54882)}
+.hv-timeline>div{position:relative;margin:0 0 14px;padding:12px 14px;border-radius:12px;background:#fff;border:1px solid #dce5f0}
+.hv-timeline>div::before{content:"";position:absolute;left:-24px;top:16px;width:13px;height:13px;border-radius:50%;background:#fff;border:3px solid #625cba}
+.hv-timeline b{color:#1b2b43}.hv-timeline small{display:block;color:#586b83;font-size:13.5px;margin-top:3px}
+.hv-check{list-style:none!important;margin:0!important;padding:0!important;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:8px 16px}
+.hv-check li{position:relative;margin:0!important;padding:8px 10px 8px 36px!important;border-radius:10px;background:#fff;border:1px solid #e5ecf5}
+.hv-check li::before{content:"✓";position:absolute;left:10px;top:8px;display:grid;place-items:center;width:18px;height:18px;border-radius:50%;background:#e9f6ef;color:#146c3a;font:700 12px/1 Inter,sans-serif}
+.hv-hub{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;align-items:center}
+.hv-hub>div{padding:12px;border-radius:12px;background:#fff;border:1px solid #dce5f0;text-align:center;font-size:14.5px;line-height:1.35}
+.hv-hub>div.hv-hub-core{grid-column:2;grid-row:2;background:linear-gradient(108deg,#2468c4,#625cba 58%,#c54882);color:#fff;font-weight:700;border:0;padding:20px 12px}
+.hv-hub>div small{display:block;color:#586b83;font-size:12.5px;margin-top:3px}
+.hv-service{margin:2em 0;padding:24px 22px;border-radius:20px;background:linear-gradient(108deg,#13294b,#2b3f8a 55%,#7a2f69);color:#fff}
+.hv-service h3,.hv-service p,.hv-service li{color:#fff!important}
+.hv-service h3{margin:0 0 8px!important;font:700 22px/1.3 "Playfair Display",Georgia,serif!important;padding:0!important}
+.hv-service h3::before{display:none!important}
+.hv-service ul{display:flex;flex-wrap:wrap;gap:8px;list-style:none!important;margin:12px 0 16px!important;padding:0!important}
+.hv-service li{margin:0!important;padding:6px 12px!important;border-radius:999px;background:rgba(255,255,255,.14);font-size:13.5px}
+.hv-service li::before,.hv-service li::marker{content:none!important}
+.hv-service a.hv-service-btn{display:inline-block;padding:11px 20px;border-radius:999px;background:#fff;color:#13294b!important;font-weight:700;text-decoration:none!important}
+@media (max-width:640px){
+  .hv-viz{padding:18px 14px}
+  .hv-flow{flex-direction:column}
+  .hv-flow>div{margin:0 0 22px 0}
+  .hv-flow>div:last-child{margin-bottom:0}
+  .hv-flow>div:not(:last-child)::after{top:auto;right:auto;left:50%;bottom:-17px;transform:translateX(-50%) rotate(135deg)}
+  .hv-funnel>div{width:100%!important}
+  .hv-hub{grid-template-columns:1fr 1fr}
+  .hv-hub>div.hv-hub-core{grid-column:1/-1;grid-row:1}
+}
+/* hv-viz-2 */ .hv-flow>div>span{display:block;margin-top:5px;color:#586b83;font-size:13px;line-height:1.45}.hv-funnel>div>span{display:block;font-weight:400;opacity:.92;font-size:13px}.hv-funnel>div>b{display:block}.hv-timeline>div>span{display:block;color:#586b83;font-size:13.5px;margin-top:3px}.hv-hub>div>span{display:block;color:#586b83;font-size:12.5px;margin-top:3px}.hv-hub>div.hv-hub-core>span{color:#fff}
+/* hv-perf-1: phones skip drawing off-screen parts until scrolled near */
+.hv-footer,.hvb-arch,.hvb-about,.hv-desk,.hv-wrap,.hv-brief{content-visibility:auto;contain-intrinsic-size:auto 900px}

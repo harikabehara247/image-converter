@@ -1,0 +1,15 @@
+@ffmpeg/ffmpeg 0.12.15 MIT
+@ffmpeg/util 0.12.2 MIT
+@ffmpeg/core 0.12.10 GPL-2.0-or-later
+@huggingface/transformers 3.8.1 Apache-2.0
+@tensorflow/tfjs 4.22.0 Apache-2.0
+pdf-lib 1.17.1 MIT
+fflate 0.8.3 MIT
+@upscalerjs/esrgan-medium 1.0.0 MIT
+sts-rmbg-modnet 1.0.0 Apache-2.0
+
+pdfjs-dist 5.4.296 Apache-2.0
+qrcode-generator 2.0.4 MIT
+tesseract.js 6.0.1 Apache-2.0
+tesseract.js-core 6.1.2 Apache-2.0
+@tesseract.js-data/eng,hin,tel 1.0.0 Apache-2.0
